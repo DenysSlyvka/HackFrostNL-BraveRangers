@@ -1,17 +1,19 @@
 /*header*/
 #home{ 
     font-size: x-large;
-	max-width: 100%;
+    max-width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	margin: 2rem;
     text-decoration: none;
+    color: white;
 }
 
 h2{
     margin-left: 10rem;
     margin-top: 3rem;
     font-size: 2.5rem;
+    color: white;
 }
 
 /*body*/
@@ -34,20 +36,20 @@ body{
 	margin-right: 15%;
 	margin-top: 5%;
 	margin-left: 15%;
-	padding-bottom: 10%;
+    margin-bottom: 10%;
 	text-align: center;
 }
 
 .class{
 	border-width: medium;
-	min-width: 40%;
+	width: 25%;
 	margin: 2rem;
-	padding: 4rem;
+	padding: 7rem;
 	background-color: #1d1c1c88;
 }
 
 .class i{
-    font-size: 4rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -58,4 +60,40 @@ h3{
 	display: flex;
 	justify-content: center;
 	padding-top: 1rem;
+}
+
+.class2{
+    border-width: medium;
+	width: 85%;
+	margin: 2rem;
+	padding: 4rem;
+	background-color: #1d1c1c88;
+}
+
+.class2 i{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#prices{
+    display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+#part1{
+    max-width: auto;
+}
+
+#part2{
+    max-width: auto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#part3{
+    max-width: auto;
+    font-size: 1.5rem;
+    color: white;
 }

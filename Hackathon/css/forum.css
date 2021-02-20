@@ -1,13 +1,13 @@
-h4{
-    color: white;
-    margin-top: 5%;
-    font-size: 3rem;
-}
-
-h5{
+/*header*/
+#forum{
+    text-decoration: none;
     color: white;
     font-size: 2rem;
-    margin-top: 2%;
+}
+header{
+    background-color: #1d1c1c88;
+    max-width: 25%;
+    padding: 1.5rem;
 }
 
 p{
@@ -24,23 +24,33 @@ p{
     padding-left: 5%;
 	background-color: #1d1c1c88;
 }
+
 .search-bar{
     border: 2px solid white;
     border-width: 0 0 3px;
     background-color: transparent;
-    font: 22px "Open Sans", sans-serif;
+    font-size: 2rem;
     padding: 0.125em 0.225em;
     width: 85%;
+    margin-bottom: 2rem;
 }
 
 .search-bar:focus{
-    color: #283be1;
-    border-color: #283be1;
+    color: #43b5f5;
+    border-color: #43b5f5;
     outline: none;
 }
 
-button i{
-    color: #283be1;
+#search-btn{
+    color: white;
+    background: none;
+    font-size: 2rem;
+}
+
+h5{
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
 }
 
 /*right panel*/
@@ -49,6 +59,12 @@ button i{
     right: 0px;
     width: 75%;
     padding-left: 5%;
+}
+
+h4{
+    color: white;
+    margin-top: 5%;
+    font-size: 3rem;
 }
 
 input{

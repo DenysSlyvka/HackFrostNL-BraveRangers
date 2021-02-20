@@ -1,5 +1,6 @@
 html {
 	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+	font-family: 'Poppins', sans-serif;
 }
 
 * {

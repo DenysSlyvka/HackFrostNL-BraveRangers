@@ -1,13 +1,331 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.bg-image{
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 2em;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  display: block;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.bg-image-gray{
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 2em;
+  z-index: -1;
+  height: 46em;
+  width: 100%;
+  display: block;
 }
+
+div.disabled {
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+
+.content{
+  z-index: 1;
+}
+
+.cardColor{
+  background-color: rgba(42, 48, 46, 0.822);
+  border-color: black;
+}
+.homebackground{
+  background: -moz-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: block;
+}
+
+.signupbackground{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 2em;
+  display: block;
+}
+#apppage .gradient {
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      45deg,
+      from(rgba(42, 27, 161, 0.7)),
+      to(rgba(29, 210, 177, 0.7))
+    );
+    background: -o-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+    background: linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+  }
+  
+  #apppage .view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+  }
+  
+  #h6 {
+    line-height: 1.7;
+  }
+
+  #arrowdown {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  #centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .footerStickToBottom{
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .push{
+    height: 3em !important;
+  }
+
+  .previewCase{
+    width: 20%;
+    height: 20%;
+    position: relative;
+  }
+
+  .smallBuildTile{
+    height: 50% !important;
+  }
+
+  .shortInputAmounField{
+    width: 4em !important;
+  }
+
+  .computerInfo{
+    width: 100%;
+  }
+
+  .buildListCenterBuildImage{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    #apppage .animated {
+      max-height: 50vh;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      
+    }
+
+    .visible{
+      display: none;
+    }
+
+    .push{
+      height: 8em !important;
+    }
+
+    .shortInputAmounField{
+      width: 3.4em !important;
+      height: 2.2em !important;
+    }
+
+    .buildListCenterBuildImage{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .buildListCenterComponentImage{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      left: 2em;
+    }
+
+    .buildListCenterDriverButton{
+      position: relative;
+      width: 150%;
+      height: 100%;
+      left: 3em !important;
+    }
+
+    .smallTextStyle{
+      font-size: 0.8em;;
+    }
+
+    .smallOrderNr{
+      text-align: center;
+    }
+
+    .previewCase{
+      width: 20%;
+      height: 20%;
+      position: relative;
+      
+    }
+
+    
+
+    .shortPCInfo{
+      top: 11em;
+      left: -8em;
+      width: 100%;
+    }
+
+    .smallSpecButton{
+      width: 100%;
+    }
+
+  }
+
+  @media only screen and (min-width: 500px) {
+    .push{
+      height: 13em !important;
+    }
+    .buildListCenterBuildImage{
+      position: relative;
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .push{
+      height: 18em !important;
+    }
+    .bg-image-gray.inherit{
+      height: inherit !important;
+    }
+
+    .buildListCenterBuildImage{
+      position: relative;
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    #apppage .animated img {
+      max-height: 35vh;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+    
+
+    .detailBuildButton{
+      float: right;
+      position: relative;
+      height: 2em;
+      left: 3em !important;
+      top: -1em;
+    }
+
+    Center
+    #img{
+      width: 100;
+      height: 100;
+    }
+    #profileData767{
+      margin-top: 3;
+    }
+  }
+
+  
+  
+  @media (max-width: 767px) and (orientation: landscape) {
+    #apppage .animated img {
+      max-height: 50vh;
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
+    }
+    #img{
+      width: 100;
+      height: 100;
+    }
+  }
+  @media (max-width: 1000px) {
+    #apppage .view {
+      min-height: 150vh;
+    }
+    #img{
+      width: 100;
+      height: 100;
+    }
+    
+    
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    #apppage .view {
+      min-height: 200vh;
+    }
+    #img{
+      width: 100;
+      height: 100;
+    }
+    
+    .shortInputAmounField{
+      width: 5em !important;
+    }
+  }
+
+  @media (min-height: 1024px) and (max-height: 1400px) {
+    .centerScreenF2{
+      position: relative;
+      top: 10em;
+      height: 58em !important;
+    }
+
+  }
+  

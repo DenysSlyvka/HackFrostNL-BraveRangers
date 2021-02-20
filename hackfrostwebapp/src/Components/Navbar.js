@@ -1,8 +1,7 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
 import '../index.css';
-
-
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -11,9 +10,7 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-
   MDBContainer,
-
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
@@ -43,35 +40,6 @@ class NavigationBar extends React.Component{
                 <strong className="white-text">BYP</strong>
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
-              <MDBCollapse id="navbarCollapse3" isOpen={this.state.collapseID} navbar>
-              
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                   <MDBNavLink to="/">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="./Form">Form</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="./about">About</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="./Privacy">Privacy</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBDropdown>
-                      <MDBDropdownToggle className="dopdown-toggle" nav>
-                        <img src="https://www.hellobeauty.id/storage/images/cache/1cd2f08830fdc4ebf05973eb787d7b0b-250-250.png" className="rounded-circle z-depth-0"
-                          style={{ height: "35px", padding: 0 }} alt="" />
-                      </MDBDropdownToggle>
-                      <MDBDropdownMenu className="dropdown-default" right>
-                      </MDBDropdownMenu>
-                    </MDBDropdown>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
             </MDBNavbar>
          </MDBContainer>
         );

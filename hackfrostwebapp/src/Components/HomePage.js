@@ -1,11 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import  "react-bootstrap";
+import '../index.css';
 import Card from "react-bootstrap/Card";
 import Media from "react-bootstrap/Media";
 import Button from "react-bootstrap/Button";
 import NavigationBar from "./Navbar";
-
+import PlusImage from "../images/Plus_Icon.png";
+import QuestionMark from "../images/Question_Mark_icon.png";
+import UserIcon from "../images/User_Icon.png";
+import MousePrize from "../images/mousePrize.png";
+import ScreenPrize from "../images/screenPrize.png";
+import VrPrize from "../images/valveIndexPrize.png";
 
 class About extends React.Component {
     
@@ -16,24 +22,95 @@ class About extends React.Component {
     //Algemene lay out van de pagina
     <React.Fragment>
       <NavigationBar/>
-      <div className="mean-fruit-gradient loginbackground">
+      <div className="homebackground">
           <div className="d-flex justify-content-center ">
-              <Card style={{ width: "75%" }}  className="mt-5">
-                  <Card.Header>
-                  <div className="d-flex justify-content-center">
-                      <p>jTo create the project, the REACT framework was chosen, because of previous experience and knowledge in the environment, it seemed the best option to start the project. 
-                          Bootstrap & MDB-react were used for the layout and layout of the website. 
-                          In addition to the layout, Firebase database was used to develop data storage in a NoSQL database. <br/>
-                          During development other ways were also used to create the task, these are also discussed.
-                          The process and making went in 3 big steps. The first step was to further explore React and learn how to work in the environment. 
-                          The second step was important for the visual layout of the pages. The last step is for the development and connection of the app with the database.</p>
-                  </div>
-                  </Card.Header>
-
-                  <Card.Body>
+              <Card style={{ width: "25%" }}  className="mt-5 mr-5">
+                  <Card.Body className="cardColor">
                   <Media className="d-block align-content-center">
                       <Media.Body className="shortPCInfo">
                       <div className="d-flex justify-content-center">
+                      <img
+                        height= "50%"
+                        width= "50%"
+                        className="showDetails  mb-3"
+                        src={PlusImage}
+                        alt="Generic placeholder"
+                      />
+                      </div>
+                      </Media.Body>
+                  </Media>
+                  <Card.Text>{}</Card.Text>
+                  </Card.Body>
+              </Card>
+              <Card style={{ width: "25%" }}  className="mt-5 mr-5">
+                  <Card.Body className="cardColor">
+                  <Media className="d-block align-content-center">
+                      <Media.Body className="shortPCInfo">
+                      <div className="d-flex justify-content-center">
+                      <img
+                        height= "25%"
+                        width= "30%"
+                        className="showDetails  mb-3"
+                        src={QuestionMark}
+                        alt="Generic placeholder"
+                      />
+                      </div>
+                      </Media.Body>
+                  </Media>
+                  <Card.Text>{}</Card.Text>
+                  </Card.Body>
+              </Card>
+              <Card style={{ width: "25%" }}  className="mt-5">
+                  <Card.Body className="cardColor">
+                  <Media className="d-block align-content-center">
+                      <Media.Body className="shortPCInfo">
+                      <div className="d-flex justify-content-center">
+                      <img
+                        height= "50%"
+                        width= "45%"
+                        className="showDetails  mb-3"
+                        src={UserIcon}
+                        alt="Generic placeholder"
+                      />
+                      </div>
+                      </Media.Body>
+                  </Media>
+                  <Card.Text>{}</Card.Text>
+                  </Card.Body>
+              </Card>
+              </div>
+              <div className="d-flex justify-content-center ">
+              <Card style={{ width: "75%" }}  className="mt-5">
+                  <Card.Body className="cardColor">
+                  <Media className="d-block align-content-center">
+                      <Media.Body className="shortPCInfo">
+                      <div className="d-flex justify-content-around text-light">
+                        <h3 className="mr-5 ml-5 ">500 points</h3>
+                        <h3 className="mr-5 ml-5">1000 points</h3>
+                        <h3 className="mr-5 ml-5">3000 points</h3>
+                      </div>
+                      <div className="d-flex justify-content-center">
+                      <img
+                        height= "35%"
+                        width= "25%"
+                        className="showDetails  mb-3 mr-5"
+                        src={MousePrize}
+                        alt="Generic placeholder"
+                      />
+                      <img
+                        height= "50%"
+                        width= "25%"
+                        className="showDetails  mb-3 mr-5"
+                        src={ScreenPrize}
+                        alt="Generic placeholder"
+                      />
+                      <img
+                        height= "50%"
+                        width= "25%"
+                        className="showDetails  mb-3 mr-5"
+                        src={VrPrize}
+                        alt="Generic placeholder"
+                      />
                       </div>
                       </Media.Body>
                   </Media>

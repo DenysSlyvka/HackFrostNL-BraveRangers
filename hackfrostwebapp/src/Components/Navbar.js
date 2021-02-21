@@ -1,48 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import '../App.css';
-import '../index.css';
-import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavItem,
-  MDBNavLink,
-  MDBNavbarToggler,
-  MDBCollapse,
-  MDBContainer,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-} from "mdbreact";
+import  "react-bootstrap";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Container from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 
-//Navbar die in sommige schermen wel gebruikt wordt en andere niet
-class NavigationBar extends React.Component{
-  state = {
-    collapseID: ""
-  };
-  
-  //Collapse maken voor als een itemm gecolapsed moet worden
-  toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
-    collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-  }));
-  
-    //Bevat ook een sign out knop die de gebruiker ui firebase uitlogd. (firebase.auth().signOut())
-    render(){        
-        return(
-          
-          <MDBContainer className="fluid">
-               <MDBNavbar color='elegant-color-dark' dark expand='md' fixed='top' scrolling>
-              <MDBNavbarBrand>
-                <strong className="white-text">BYP</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
-            </MDBNavbar>
-         </MDBContainer>
-        );
-    }
+
+class NavigationBar extends Component {
+
+render() {
+  return (
+   
+    <Navbar expand="lg" variant="white" bg="dark">
+      <Container>
+          <Navbar.Brand href="./">Home</Navbar.Brand>
+          <Navbar.Brand href="./Chat">Chat</Navbar.Brand>
+          <Navbar.Brand href="#">Form</Navbar.Brand>
+      </Container>
+    </Navbar>
+    
+    );
+  }
 }
+
 export default NavigationBar;

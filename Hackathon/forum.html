@@ -3,7 +3,6 @@
 <head>
 	<title>Website Hackathon</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/start.css">
     <link rel="stylesheet" type="text/css" href="css/forum.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -31,17 +30,47 @@
             <p>sub-subject</p>
             <p>sub-subject</p>
             <p>sub-subject</p>
-            <h5>Overige</h5>
+            <h5>Overige...</h5>
         </div>
         <div class="rightPanel">
             <h4>ONDERWERP - subonderwerp</h4>
-            <p>[getal] questions</p>
-            <button>filter</button>
+            <div id="filter">
+                <p>[getal] questions</p>
+                <a class="filter-btn" href="">filter</a>
+            </div>
             <div class="question">
-                <p>Name</p>
-                <img src="./photos/profile picture.jpg" alt="profile picture">
-                <p>Subject question</p>
-                <p>Extra info</p>
+                <div id="user">
+                    <p>Name</p>
+                    <img src="./photos/profile picture.jpg" alt="profile picture">
+                </div>
+                <div class="info-question">
+                    <h3>Subject question</h3>
+                    <p>Extra info</p>
+                    <p>Extra info</p>
+                    <p>Extra info</p>
+                </div>
+                <div class="react">
+                    <p>[Datetime]</p>
+                    <p><i class="fas fa-eye"></i>times seen</p>
+                    <p><i class="fas fa-user-edit"></i>reactions</p>
+                </div>
+            </div>
+            <div class="question">
+                <div id="user">
+                    <p>Name</p>
+                    <img src="./photos/profile picture.jpg" alt="profile picture">
+                </div>
+                <div class="info-question">
+                    <h3>Subject question</h3>
+                    <p>Extra info</p>
+                    <p>Extra info</p>
+                    <p>Extra info</p>
+                </div>
+                <div class="react">
+                    <p>[Datetime]</p>
+                    <p><i class="fas fa-eye"></i>times seen</p>
+                    <p><i class="fas fa-user-edit"></i>reactions</p>
+                </div>
             </div>
         </div>
     </main>

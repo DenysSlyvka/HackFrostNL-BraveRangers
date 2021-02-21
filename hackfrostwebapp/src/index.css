@@ -45,6 +45,20 @@ div.disabled {
   background-color: rgba(42, 48, 46, 0.822);
   border-color: black;
 }
+
+.homebackground-expandable{
+  background: -moz-linear-gradient(
+      45deg,
+      rgba(42, 27, 161, 0.7),
+      rgba(29, 210, 177, 0.7) 100%
+    );
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 2em;
+  display: block;
+}
+
 .homebackground{
   background: -moz-linear-gradient(
       45deg,

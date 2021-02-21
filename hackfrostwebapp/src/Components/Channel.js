@@ -4,6 +4,7 @@ import Message from './Message';
 import styled from 'styled-components';
 
 
+
 const Channel = ({ user = null, db = null}) => {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
@@ -51,9 +52,9 @@ const Channel = ({ user = null, db = null}) => {
     }
 
     return (
-        <div>
-            <div className=" d-flex justify-content-center w-100 border" >
-            <h2>Chat</h2>
+        <div >
+            <div className=" d-flex justify-content-center w-100  " >
+            <h2 className="text-white">Chat</h2>
             <div className="messageBox" style={{ width: "50%" }}>
             <ul>
                 {messages.map(message => (

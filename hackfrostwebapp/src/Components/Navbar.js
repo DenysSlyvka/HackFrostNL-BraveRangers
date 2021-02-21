@@ -17,7 +17,8 @@ render() {
       <Container>
           <Navbar.Brand href="./">Home</Navbar.Brand>
           <Navbar.Brand href="./Chat">Chat</Navbar.Brand>
-          <Navbar.Brand href="#">Form</Navbar.Brand>
+          <Navbar.Brand href="./Questions">Questions</Navbar.Brand>
+          <Navbar.Brand href="./Forum">Forum</Navbar.Brand>
       </Container>
     </Navbar>
     

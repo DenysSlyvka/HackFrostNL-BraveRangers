@@ -1,0 +1,157 @@
+/*header*/
+#forum{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+header{
+    background-color: #1d1c1c88;
+    max-width: 25%;
+    padding: 1.5rem;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-left: 1.5%;
+}
+
+
+/*body*/
+body{
+    background-image: url(../src/images/neon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*left panel*/
+.leftPanel{
+    position: absolute;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+    padding-left: 5%;
+	background-color: #1d1c1c88;
+}
+
+.search-bar{
+    border: 2px solid white;
+    border-width: 0 0 3px;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 0.125em 0.225em;
+    width: 85%;
+    margin-bottom: 2rem;
+}
+
+.search-bar:focus{
+    color: #43b5f5;
+    border-color: #43b5f5;
+    outline: none;
+}
+
+#search-btn{
+    color: white;
+    background: none;
+    font-size: 2rem;
+}
+
+h5{
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+}
+
+/*right panel*/
+.rightPanel{
+    position: absolute;
+    right: 0%;
+    padding-left: 5%;
+    padding-right: 15%;
+    width: 75%;
+}
+
+h4{
+    color: white;
+    margin-top: 5%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+input{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+img{
+    width: 5%;
+    height: 5%;
+}
+
+#filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#filter p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.filter-btn{
+    position: relative;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0.2em solid white;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+.question{
+    color: white;
+    background-color: #1d1c1c88;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+}
+
+img{
+    min-width: 85%;
+    min-height: 80%;
+}
+
+#user{
+    width: 15%;
+}
+
+#user p{
+    font-size: 1.5rem;
+}
+
+.info-question{
+    width: 30%;
+    font-size: 1.8rem;
+}
+
+h3{
+    padding-bottom: 1rem;
+}
+.react{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.react i{
+    padding-right: 1rem;
+}
+
+

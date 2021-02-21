@@ -81,7 +81,7 @@ function Chat() {
   return (
     <div>
         <NavigationBar/>
-        <div >
+        <div className="homebackground-expandable">
         {user ? (
         <>
             <StyledButton className="signOutBtn" onClick={signOut}>Sign out</StyledButton>

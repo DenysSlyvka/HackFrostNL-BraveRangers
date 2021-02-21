@@ -8,10 +8,10 @@ const Message = ({
     photoURL = "",
 }) => {
     return (
-    <div className="message d-flex w-75">
+    <div className="message d-flex w-75 ">
         <div className="userInfo w-50">
             {photoURL ? (
-                <img className= "profilePic" src={photoURL} alt="Avatar" witdh={45} height={45}/>
+                <img className= "profilePic" src={photoURL} alt="Avatar" witdh={25} height={25}/>
             ) : null }
             {displayName ? <p className="userName">&nbsp; {displayName} - &nbsp;</p> : null}
             {createdAt?.seconds ? (

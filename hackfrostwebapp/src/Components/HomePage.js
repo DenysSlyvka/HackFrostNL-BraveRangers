@@ -24,14 +24,14 @@ class About extends React.Component {
       <NavigationBar/>
       <div className="homebackground">
           <div className="d-flex justify-content-center ">
-              <Card style={{ width: "25%" }}  className="mt-5 mr-5">
+              <Card style={{ width: "15%", height: "25%" }}  className="mt-5 mr-5">
                   <Card.Body className="cardColor">
                   <Media className="d-block align-content-center">
                       <Media.Body className="shortPCInfo">
                       <div className="d-flex justify-content-center">
                       <img
-                        height= "50%"
-                        width= "50%"
+                        height= "25%"
+                        width= "25%"
                         className="showDetails  mb-3"
                         src={PlusImage}
                         alt="Generic placeholder"
@@ -42,14 +42,14 @@ class About extends React.Component {
                   <Card.Text>{}</Card.Text>
                   </Card.Body>
               </Card>
-              <Card style={{ width: "25%" }}  className="mt-5 mr-5">
+              <Card style={{ width: "10%", height: "25%" }}  className="mt-5 mr-5">
                   <Card.Body className="cardColor">
                   <Media className="d-block align-content-center">
                       <Media.Body className="shortPCInfo">
                       <div className="d-flex justify-content-center">
                       <img
                         height= "25%"
-                        width= "30%"
+                        width= "25%"
                         className="showDetails  mb-3"
                         src={QuestionMark}
                         alt="Generic placeholder"
@@ -60,7 +60,7 @@ class About extends React.Component {
                   <Card.Text>{}</Card.Text>
                   </Card.Body>
               </Card>
-              <Card style={{ width: "25%" }}  className="mt-5">
+              <Card style={{ width: "13%", height: "10%" }}  className="mt-5">
                   <Card.Body className="cardColor">
                   <Media className="d-block align-content-center">
                       <Media.Body className="shortPCInfo">
@@ -80,32 +80,50 @@ class About extends React.Component {
               </Card>
               </div>
               <div className="d-flex justify-content-center ">
-              <Card style={{ width: "75%" }}  className="mt-5">
+              <Card style={{ width: "75%", height: "25%" }}  className="mt-5">
                   <Card.Body className="cardColor">
                   <Media className="d-block align-content-center">
                       <Media.Body className="shortPCInfo">
-                      <div className="d-flex justify-content-around text-light">
+                      <div className="d-flex justify-content-center text-light">
                         <h3 className="mr-5 ml-5 ">500 points</h3>
                         <h3 className="mr-5 ml-5">1000 points</h3>
                         <h3 className="mr-5 ml-5">3000 points</h3>
                       </div>
-                      <div className="d-flex justify-content-center">
+                      <div className=" w-25 h-25 d-flex justify-content-center" >
                       <img
-                        height= "35%"
+                        height= "25%"
+                        width= "50%"
+                        className="showDetails  mb-3 mr-5"
+                        
+                      />
+                      <img
+                        height= "25%"
+                        width= "50%"
+                        className="showDetails  mb-3 mr-5"
+                        
+                      />
+                      <img
+                        height= "25%"
+                        width= "50%"
+                        className="showDetails  mb-3 mr-5"
+                       
+                      />
+                      <img
+                        height= "25%"
                         width= "25%"
                         className="showDetails  mb-3 mr-5"
                         src={MousePrize}
                         alt="Generic placeholder"
                       />
                       <img
-                        height= "50%"
+                        height= "25%"
                         width= "25%"
                         className="showDetails  mb-3 mr-5"
                         src={ScreenPrize}
                         alt="Generic placeholder"
                       />
                       <img
-                        height= "50%"
+                        height= "25%"
                         width= "25%"
                         className="showDetails  mb-3 mr-5"
                         src={VrPrize}

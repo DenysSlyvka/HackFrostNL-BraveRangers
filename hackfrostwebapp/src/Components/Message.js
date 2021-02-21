@@ -11,7 +11,7 @@ const Message = ({
     <div className="message d-flex w-75 ">
         <div className="userInfo w-50">
             {photoURL ? (
-                <img className= "profilePic" src={photoURL} alt="Avatar" witdh={25} height={25}/>
+                <img  className= "profilePic w-25 h-25" src={photoURL} alt="Avatar" />
             ) : null }
             {displayName ? <p className="userName">&nbsp; {displayName} - &nbsp;</p> : null}
             {createdAt?.seconds ? (
